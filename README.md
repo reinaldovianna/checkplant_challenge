@@ -14,7 +14,7 @@ https://rvm.io/rvm/install
 
 <pre>rvm install 2.5</pre>
 
-Este comando é para que possamos utilizar a versão 2.4.4:
+Este comando é para que possamos utilizar a versão 2.5:
 
 <pre>rvm use 2.5</pre>
 
