@@ -50,4 +50,17 @@ describe Food do
 			expect { subject.cook_calculate }.to raise_error("Não é possível calcular o tempo de preparo com as ampulhetas informadas.")
 	  end
 	end
+
+	describe "when turning an hourglass is more advantageous" do
+		before do
+	    subject.time_hourglass_one = 5
+	    subject.time_hourglass_two = 40
+	  end
+
+	  it "test time_cook 15 with time hourglass 5 and 40 equals 15" do
+			subject.time_cook = 15
+			subject.cook_calculate
+			expect(subject.result_calculator).to eq(15)
+	  end
+	end
 end
