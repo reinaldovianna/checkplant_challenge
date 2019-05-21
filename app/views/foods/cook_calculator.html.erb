@@ -9,38 +9,38 @@
 <div class="row form-group flex-v-center">
   <div class="col-md-12">
     <div class="row form-group flex-v-center">
-    	<div class="col-xs-2 col-sm-2">
-    		<%= form.label :time_cook, "Tempo de preparo" %> 
-    	</div>
-    	<div class="col-xs-2">
-		  	<%= form.number_field :time_cook %> minutos
-		  </div>
-	  </div>
-	  <div class="row form-group flex-v-center">
-	  	<div class="col-xs-2 col-sm-2">
-	    	<%= form.label :time_cook, "Tempo ampulheta 1" %>
-	    </div>
-	    <div class="col-xs-2 col-sm-2">
-		  	<%= form.number_field :time_hourglass_one %> minutos
-		  </div>
-	  </div>
-	  <div class="row form-group flex-v-center">
-	  	<div class="col-xs-2 col-sm-2">
-	  		<%= form.label :time_cook, "Tempo ampulheta 2" %>
-	  	</div>
-	  	<div class="col-xs-2 col-sm-2">
-		  	<%= form.number_field :time_hourglass_two %> minutos
-		  </div>
-	  </div>
-	  <hr/>
-	  <div class="row form-group flex-v-center">
-	  	<div class="col-sm-4">
-	  		<%= form.label :time_cook, "Tempo máximo de preparo:" %>
-	  		<%= @food.result_calculator %> 
-	  		<% if @food.result_calculator %> minutos <% end %>
-	  	</div>
-	  </div>
-	</div>
+      <div class="col-xs-2 col-sm-2">
+        <%= form.label :time_cook, "Tempo de preparo" %> 
+      </div>
+      <div class="col-xs-2">
+        <%= form.number_field :time_cook %> minutos
+      </div>
+    </div>
+    <div class="row form-group flex-v-center">
+      <div class="col-xs-2 col-sm-2">
+        <%= form.label :time_cook, "Tempo ampulheta 1" %>
+      </div>
+      <div class="col-xs-2 col-sm-2">
+        <%= form.number_field :time_hourglass_one %> minutos
+      </div>
+    </div>
+    <div class="row form-group flex-v-center">
+      <div class="col-xs-2 col-sm-2">
+        <%= form.label :time_cook, "Tempo ampulheta 2" %>
+      </div>
+      <div class="col-xs-2 col-sm-2">
+        <%= form.number_field :time_hourglass_two %> minutos
+      </div>
+    </div>
+    <hr/>
+    <div class="row form-group flex-v-center">
+      <div class="col-sm-4">
+        <%= form.label :time_cook, "Tempo máximo de preparo:" %>
+        <%= @food.result_calculator %> 
+        <% if @food.result_calculator %> minutos <% end %>
+      </div>
+    </div>
+  </div>
 </div>
-	<%= form.submit 'Calcular', class: 'btn btn-primary' %>
+  <%= form.submit 'Calcular', class: 'btn btn-primary' %>
 <% end  %>
