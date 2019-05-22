@@ -1,4 +1,4 @@
-###Problema do Miojo:
+#### Problema do Miojo:
 João é um fanático por miojos; ele os adora, e, como era de se esperar, ele levou vários pacotes quando foi acampar com seus colegas. Como João só gosta de miojos feitos com o tempo exato, ele se deseperou ao perceber que havia esquecido seu relógio em casa.
 
 Por sorte, ele conseguiu, no caminho, comprar duas ampulhetas de durações diferentes. Por exemplo, se o miojo precisa de 3 minutos para ficar pronto, e João tiver uma ampulheta de 5 minutos e outra de 7, uma possível forma de cozinhar o miojo é:
@@ -61,7 +61,7 @@ https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddom
 
 POST : http://localhost:3000/foods/cook_calculator
 
-####Request 
+#### Request 
 **Header:**
 Content-Type:application/json
 
@@ -74,7 +74,7 @@ Content-Type:application/json
 	}
 }
 
-####Response
+#### Response
 {
     "time_cook": 1,
     "time_hourglass_one": 5,
